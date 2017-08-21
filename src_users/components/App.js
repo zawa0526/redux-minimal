@@ -9,7 +9,9 @@ export class App extends React.Component {
   // pre-render logic
   componentWillMount() {
     // the first time we load the app, we need that users list
+    console.log("*****App.js************")
     this.props.dispatch({type: 'USERS_FETCH_LIST'});
+    this.props.dispatch({type: 'GIT_REPOS_FETCH_LIST'});
   }
 
   // render
@@ -47,6 +49,7 @@ export class App extends React.Component {
 function mapStateToProps(state) {
   return {
     users: state.users || [],
+    gitRepos: state.gitRepos || []
   };
 }
 export default connect(mapStateToProps)(App);

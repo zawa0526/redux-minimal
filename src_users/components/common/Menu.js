@@ -18,6 +18,11 @@ export default class Menu extends React.Component {
             Add User <Glyphicon glyph="plus-sign"/>
           </NavItem>
         </LinkContainer>
+        <LinkContainer to="/git-home">
+          <NavItem>
+            GitList
+          </NavItem>
+        </LinkContainer>
         <NavItem href="http://redux-minimal.js.org/" target="_blank">
           redux-minimal
         </NavItem>

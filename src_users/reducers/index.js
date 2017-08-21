@@ -2,6 +2,7 @@ import { combineReducers } from "redux";
 import { routerReducer } from "react-router-redux";
 import { reducer as formReducer } from "redux-form";
 import users from "./users";
+import gitRepos from "./gitRepos";
 
 // main reducers
 export const reducers = combineReducers({
@@ -18,4 +19,5 @@ export const reducers = combineReducers({
     }
   }),
   users: users,
+  gitRepos: gitRepos
 });

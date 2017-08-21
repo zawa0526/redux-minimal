@@ -5,6 +5,7 @@ import App from "./components/App";
 import Home from "./components/Home";
 import UserEdit from "./components/UserEdit";
 import NotFound from "./components/NotFound";
+import GitHome from "./components/GitHome";
 
 // build the router
 const router = (
@@ -12,6 +13,7 @@ const router = (
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
       <Route path="user-edit(/:id)" component={UserEdit}/>
+      <Route path="git-home" component={GitHome}/>
       <Route path="*" component={NotFound}/>
     </Route>
   </Router>
